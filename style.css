@@ -2,9 +2,11 @@
   box-sizing: border-box;
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
 }
-
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #CRT {
     outline: 10px solid #c5b693;
     width: 600px;
@@ -185,26 +187,66 @@ section {
   }
 }
 
-#content p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .30em solid rgb(255, 255, 255); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  float: left;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.entry {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #fefefe, #dcdcdc);
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #c4c4c4, 0 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: 40px;
+  margin: 10px auto;
+  padding: 0 10px;
+  font-family: 'Segoe UI', system-ui;
+  font-size: 0.9rem;
+  color: #000;
+  text-align: left;
+  transition: all 0.1s ease-in-out;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.entry:hover {
+  background-image: linear-gradient(to bottom, #ffffff, #e4e4e4);
+  box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #b4b4b4, 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(255, 255, 255); }
+.entry:active {
+  background-image: linear-gradient(to bottom, #cccccc, #bbbbbb);
+  box-shadow:
+    inset 0 2px 3px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+
+ /* Gray button  */
+/* h1 {
+    background-image: linear-gradient(to bottom, #ffffffc7 0%, #c7c7c7c7 50%, #CCCCCCc7 100%); 
+    box-shadow: 0px 2px 2px #bebebe inset, 0px -2px 2px #bebebe inset, 0px 2px 2px #888888; 
+} */
+
+h1,h2,h3,h4 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(200, 200, 200, 0.3) 100%);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #222;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    position: relative;
+    overflow: hidden;
+}
+
+h5 {
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #222;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+pre {
+    background-color: #000;
+    color: white;
 }
