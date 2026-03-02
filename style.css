@@ -21,7 +21,7 @@ p {
 #CRT {
     outline: 10px solid #c5b693;
     width: 600px;
-    height: 550px;
+    height: 600px;
     background-color: #D5C5A0;
     border: 1px solid black;
     border-radius: 10px;
@@ -43,6 +43,7 @@ a:hover {
 #screen {  
     width: 100%;
     height: 100%;
+    border: 30px solid transparent;
     border-image-source: url(bezel_crt.png);
     border-image-slice: 30 fill;
     border-image-outset: 0;
@@ -51,12 +52,12 @@ a:hover {
     box-shadow:
     inset 0 0 200px rgba(0,0,0),
     inset 0 0 200px rgb(0, 0, 0);
-    background-color: rgba(38, 38, 38, 0.9);
+    background-color: rgba(13, 13, 13, 0.9);
 }
 #content {
     color: white;
-    margin: 30px;
-    height: 350px;
+    padding:10px;
+    height: 100%;
 }
 #light {
     width: 10px;

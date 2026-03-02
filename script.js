@@ -7,14 +7,15 @@
 function switchOn() {
     if (status.checked) {
         light.style.boxShadow =  "rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #ae0f0f 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px";
-        screen.style.backgroundColor = "rgba(128, 128, 128)";
+        screen.style.backgroundColor = "rgb(53, 53, 53)";
+        // screen.style.boxShadow = "inset 0px 0px 15px 5px rgba(0, 0, 0)";
         document.getElementById('content').style.display = "block";
         textvisible.style.display = "block";
         petstatus.style.display = "none";
         instance.reset();
 
     } else {
-        screen.style.backgroundColor = "rgba(38, 38, 38, 0.9";
+        screen.style.backgroundColor = "rgba(13, 13, 13, 0.9)";
         document.getElementById('content').style.display = "none";
         light.style.boxShadow = "rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px";
     }
@@ -64,9 +65,9 @@ checkbox.addEventListener("change", function () {
         .break()
         .type("WHAT WOULD YOU LIKE TO DO?")
         .break()
-        .type('<a href="javascript:displayPet();"> > VIEW DEMO PET</a>')
+        .type('<a href="javascript:displayPet();" style="color: gray;"> > VIEW DEMO PET</a>')
         .break()
-        .type('<a href="#"> > PLACEHOLDER </a>')
+        .type('<a href="#" style="color: gray;"> > PLACEHOLDER </a>')
         .go();
     }
 
