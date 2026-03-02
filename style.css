@@ -7,6 +7,17 @@ body {
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+@font-face {
+    font-family: VCR;
+    src: url('project/VCR_OSD_MONO.ttf');
+}
+#typing {
+    font-family: VCR;
+}
+#pet {
+    display:none;
+    margin: auto;
+}
 #CRT {
     outline: 10px solid #c5b693;
     width: 600px;
@@ -74,15 +85,20 @@ a:hover {
 section {
     height: 100vh;
 }
-
-/* #bezel {
-    width: 90%;
-    height: 90%;
-    border-image-source: url(bezel_brown.png);
-    border-image-slice: 30 fill;
-    border-image-outset: 0;
-} */
-
+#cd {
+    height: 20px;
+    width: 300px;
+    border: 3px solid #c5b693;
+    box-shadow:  0px 0px 5px #6e6655;
+}
+#ind {
+    width: 20px;
+    height: 20px;
+    background-color: #D5C5A0;
+    border-radius: 100%;
+    border: 2px solid #a4987d;
+    box-shadow:  0px 0px 5px #6e6655;
+}
 @media (max-width: 600px) {
 
     #CRT {

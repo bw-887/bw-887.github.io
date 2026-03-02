@@ -6,6 +6,7 @@
     <title>Branden Wong</title>
      
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
@@ -24,22 +25,31 @@
         <div id="CRT" class="d-flex flex-column">
             <!-- class="justify-content-center align-items-center" -->
             <!-- game ideas: pet animation, fishing game, and pong -->
-            <div id="screen" >
+            <div id="screen" class="mx-auto">
                 <div id="content" class="crt">
-                <span id="myElement" style="font-family: monospace;"></span>
+                    <p id="typing"></p>
+                    <div id="pet">
+                        <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=DEMO&dob=1772408314&gender=f&element=Earth&pet=robot.gif&map=night.gif&background=gify.jpg&tablecolor=black&textcolor=black" frameborder="0"></iframe>
+                    </div>
+
+                <!-- <span id="myElement" style="font-family: monospace;"></span> -->
                 </div>
             </div>
             <div id="bottom" class="d-flex align-items-center">
+                
                 <label id="switch">
-                    <input type="checkbox" id="status" onclick="switchOn()" >
+                    <input type="checkbox" id="status" onclick="switchOn()" autocomplete="off">
                     
                 </label>
                 <div id="light" class="ms-3"></div>
+                <div id="cd" class="ms-5 mt-3"></div>
+                <div id="ind" class="ms-3"></div>
+                <div id="ind" class="ms-3"></div>
+                <div id="ind" class="ms-3"></div>
             </div>
         </div>
     </section>
     
-
 
 
 </body>
