@@ -2,14 +2,47 @@
   box-sizing: border-box;
 }
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25  )), url('sky.webp');
+    background-size: 300px 300px;
+}
+span {
+    font-size: 1.2rem;
 }
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.1rem;
 }
 @font-face {
     font-family: VCR;
     src: url('project/VCR_OSD_MONO.ttf');
+}
+.navsection {
+    background: linear-gradient(to right, #88AEC7 80%, #ffffff00 100%);
+    overflow: auto;
+}
+.back {
+    background-color: #ffffff;
+}
+/* ,#ffffff00 0%,#88AEC7 10%,  */
+nav a{
+    border:1px solid black;
+}
+nav a:hover {
+  background-color: #c8c8c9;
+}
+.hr1 {
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+footer {
+    position:absolute;
+    bottom:0;
 }
 #typing {
     font-family: VCR;
@@ -33,10 +66,7 @@ p {
     padding: 10px;
     background-color: #D5C5A0;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
+
 a:hover {
     color: gray;
 }
@@ -241,30 +271,6 @@ section {
     box-shadow: 0px 2px 2px #bebebe inset, 0px -2px 2px #bebebe inset, 0px 2px 2px #888888; 
 } */
 
-h1,h2,h3,h4 {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(200, 200, 200, 0.3) 100%);
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.4); 
-    border-radius: 8px;
-    padding: 10px 20px;
-    color: #222;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
-}
-
-h1 {
-    position: relative;
-    overflow: hidden;
-}
-
-h5 {
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.4); 
-    border-radius: 8px;
-    padding: 10px 20px;
-    color: #222;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
-    text-decoration: underline;
-}
 pre {
     background-color: #000;
     color: white;

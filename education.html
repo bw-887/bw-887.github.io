@@ -10,37 +10,57 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-    <header class="container-fluid col-sm-12 col-md-3 float-end text-end m-3 mt-5">
-        <h1>Branden Wong</h1>
+    <section class="container-fluid col-sm-12 col-md-7 m-0 p-4 pt-1 navsection">
             <nav>
-                
-                    <a href="index.html">Introduction</a><br>
-                    <a href="education.html">Education & Experience</a><br>
-                    <a href="projects.html">Projects</a><br>
-
+                    <a href="index.html">Home</a> 
+                    <a href="about.html">About</a>
+                    <a href="education.html">Education & Experience</a>  
+                    <a href="projects.html">Projects</a><br> 
             </nav>
-    </header>
-    <section class="container-fluid col-md-8 col-sm-12 float-start m-sm-0 d-flex">
-        <div class="m-5 float-start">
-            <h3>Education</h3>
-            <p>Brooklyn Technical High School &emsp;&emsp;&emsp;2021 - 2025</p>
-            <p>SUNY Binghamton University &emsp;&emsp;&emsp;&emsp;2025 - Present, Electrical Engineering</p>
-            <h3>Activities</h3>
-            <h5>Frontend Web Design: HTML, CSS, JavaScript</h5>
-            <p>Since 2021, I've been interested in UI design, practicing with video and photo editing software. In 2024, 
-                I learned HTML and CSS, hardcoding my first website without static site generators. I learned JavaScript and BootStrap afterwards.
-            </p>
-            <h5>Arduino & Microcontrollers</h5>
+            <div class="hr1 col-sm-12 col-md-6">Education</div>
+            <div class="d-flex justify-content-between">
+                <span><b>Brooklyn Technical High School</b></span>
+                <span>2021-2025</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span><b>SUNY Binghamton University, BS Electrical Engineering</b></span>
+                <span>2025-Present</span>
+            </div>
+            <br>
+            <div class="hr1 col-sm-12 col-md-6">Activities</div>
+            <div class="d-flex justify-content-between">
+                <span><b>Linux Server Adminstration</b></span>
+                <span>2026</span>
+                
+            </div>
             <p>
-                I learned C/C++ and Python through my projects with the Arduino Uno R4, Arduino Nano ESP32, and ESP32-wroom-32.
+                I currently maintain my own home servers, with machines running Proxmox and Ubuntu Server LTS. I self-host my own services such as Nextcloud and Immich, in Docker containers. I use a reverse proxy to safely expose services to the public, and to provide myself constant and easy access to
+                my own storage. I ensure constant uptime and created monitoring and security stacks. 
             </p>
-            <h5>CAD</h5>
+            <div class="d-flex justify-content-between">
+                <span><b>Raspberry pi & Microcontrollers</b></span>
+                <span>2024</span>
+            </div>
             <p>
-                In 2021, my freshman year of highschool, I took my first CAD class for Fusion360. Afterwards, I learned Autodesk Inventor and SOLIDWORKS
+                I learned C/C++ when using the Arduino Uno R4. Python through my projects with the raspberry pi.
             </p>
-        </div>
+            <div class="d-flex justify-content-between">
+                <span><b>CAD</b></span>
+                <span>2021</span>
+            </div>
+            <p>
+                I started using Fusion 360 in my freshman year of highschool, Afterwards, I become a certified user of <a href="https://www.credly.com/badges/a0be84a7-223e-48e0-bda1-382dc99367bc">Autodesk Inventor</a> and learned SOLIDWORKS.
+            </p>
+            <div class="d-flex justify-content-between">
+                <span><b>Frontend Web Design</b></span>
+                <span>2020</span>
+            </div>
+            <p>
+                I've been creating and maintaining websites since 2020. I started with raw HTML and CSS, becoming very proficient before learning a framework. I ended up
+                preferring raw CSS over frameworks. I learned JavaScript and stuck with Bootstrap as my primary framework for responsive web design.
+            </p>
+            <footer>Email: <a href="mailto:wongbranden887@gmail.com">wongbranden887@gmail.com</a> | <a href="https://www.linkedin.com/in/branden-wong-670544383/">Linkedin</a></footer>
     </section>
+    
 </body>
-<script src="https://unpkg.com/typeit/dist/index.umd.js"></script>
-<script src="script.js"></script>
 </html>

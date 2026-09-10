@@ -10,86 +10,24 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-    <header class="container-fluid col-sm-12 col-md-3 float-end text-end m-3 mt-5">
-        <h1>Branden Wong</h1>
-            <nav>
-                
-                    <a href="index.html">Introduction</a><br>
-                    <a href="education.html">Education & Experience</a><br>
-                    <a href="projects.html">Projects</a><br>
-
-            </nav>
-    </header>
-    <section class="container-fluid col-md-8 col-sm-12 float-start m-sm-0 d-flex text-sm-center text-md-start">
-        <div class="container-fluid m-md-5 m-sm-0">
-            <h3>Projects</h3>
-            <h5>Arduino RFID Space Game</h5>
-            <img src="project/6.jpg" alt="Spaceship Project" width="300px">
-            <p><video src="project/5.mp4" width="300" controls muted></video></p>
-            <h5>Super Space Race</h5>
-            <p>
-                Super Space Race is the name of my fall semester engineering project. The idea was simple: with provided tools, create a 
-                game using a Uno R4. We needed to add some sort of unique "Engineering Concept" to it, so my Group decided to add an RFID scanner.
-
-            </p>
-            <img src="project/7.jpg" alt="Casing" width="300px">
-            <img src="project/2.jpg" alt="wiring" width="300px">
-            <p>
-                The idea was to replace the control button with an RFID scanner, to make it feel more "futuristic." The wiring turned out to be 
-                slightly more difficult than intended. Not to mention, the RFID mfrc522 module we were provided was a fake. The only way even gen
-                the Arduino to recognize and read the module was by using the Vin(!) pin instead of 3.3V. Typically using the Vin pin can damage your 
-                circuits, so it was definitely strange this knockoff module required it. 
-            </p>
-            <p>
-                After that, the wiring just required the typical SPI pins (MOSI, MISO, SCK, SDA). On the UNO r4, this corresponds to pins 10(SDA), 11(MOSI), 12(MISO), 13(SCK). 
-            </p>
-            <h5>The code</h5>
-            <p>Firstly, introducing the RFID module was simple. We used the mfrc522 library for this.</p>
-            <pre>
-void setup() {
-
-  Serial.begin(9600);   
-  SPI.begin();     
-  mfrc522.PCD_Init();   
-  // Initializing the module 
-}
-            </pre>
-            <p>Then came defining what scanning a RFID card would actually do. The module came with 2 chips. A white card and a blue keychain.
-            </p>
-            <pre>
-if (mfrc522.PICC_IsNewCardPresent() && mfrc522.PICC_ReadCardSerial()) {
-    buttonPushed = true; // makes RFID scan act like pressing a button
-    Serial.print("Card UID: "); //print UID on serial monitor
-    for (byte i = 0; i < mfrc522.uid.size; i++) {
-      Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
-      Serial.print(mfrc522.uid.uidByte[i], HEX);
-    }
-    Serial.println();
-    mfrc522.PICC_HaltA();
-  }
- ....
-}
-            </pre>
-            <p>Secondly, the character generation on the LCD. This was done using defining the bytes on the LCD</p>
-            <pre>
-void initializeGraphics(){
-  
-  static byte graphics[] = {
-    // First run position of the horse
-    B00000,
-    B10000,
-    B01110,
-    B01001,
-    B01110,
-    B10000,
-    B00000,
-    B00000,
-    ...
-  }
-}
-            </pre>
-        </div>
+    <section class="container-fluid col-sm-12 col-md-7 m-0 p-4 pt-1 navsection">
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>
+            <a href="education.html">Education & Experience</a>  
+            <a href="projects.html">Projects</a><br> 
+        </nav>
+        <div class="hr1 col-sm-12 col-md-6">Projects</div>
+        <p>Some of my projects spanning the last couple of years</p>
+        <ul>
+            <li><a href="dida final/index.html">Web Design DIDA final (not mobile responsive)</a></li>
+            <li><a href="crt.html">Javascript CRT</a></li>
+            <li><a href="projects/arduino.html">Freshman Arduino Project</a></li>
+        </ul>
+        <footer>Email: <a href="mailto:wongbranden887@gmail.com">wongbranden887@gmail.com</a> | <a href="https://www.linkedin.com/in/branden-wong-670544383/">Linkedin</a></footer>
     </section>
+
+    
 </body>
 <script src="https://unpkg.com/typeit/dist/index.umd.js"></script>
 <script src="script.js"></script>
