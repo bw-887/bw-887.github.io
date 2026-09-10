@@ -1,0 +1,393 @@
+html,
+body,
+#container {
+    /* remove all margins from side of page */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: green;
+}
+
+.section {
+    /* make sections be big */
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    overflow-x: hidden;
+}
+
+.section>h1 {
+    /* fix stupid h1 margin before section */
+    margin: 0;
+}
+
+/* color stuff */
+#one {
+    background-color: #82C8E5;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4 {
+      font-family: "Orbitron";
+}
+p {
+    font-family: "Quantico", sans-serif;
+}
+small {
+    font-size: 0.75rem;
+}
+.navbar-brand {
+      font-family: "Orbitron";
+}
+#two {
+    background-image: linear-gradient(to top, #82C8E5, #829FAB);
+}
+
+#videoFile {
+    width: 90%;
+}
+
+#three {
+    background-image: linear-gradient(to top, #829FAB, #345766);
+}
+
+#four {
+    background-image: linear-gradient(to top, #345766, #162A33);
+}
+
+#five {
+    background-image: linear-gradient(to top, #162A33, #0a151a);
+}
+
+#six {
+    background-color: #0a151a;
+}
+
+#seven {
+    background-image: linear-gradient(to top, #0a151a, #050a0d);
+}
+
+#eight {
+    background-color: #050a0d;
+}
+
+#laika {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blink {
+    animation: 1s infinite normal blink;
+    animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+}
+
+@keyframes blink {
+    50% {
+        color: rgb(146, 146, 146);
+        font-size: 1.25rem;
+    }
+}
+
+.text {
+    width: 500px;
+    transform: translate(100px, 100px);
+}
+
+/* .cloud{ 
+
+    text-align: center;
+    padding: 10px;
+    width:500px;
+    height:120px;
+    background:#B6B6B4;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 100px;
+    
+} */
+
+#css {
+    text-align: center;
+    padding: 25px;
+    width: 30%;
+    background: #B6B6B4;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grass {
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    background: green;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#css2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 30%;
+    background: #ffffff;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    color: #606060;
+    text-shadow: #555555;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+#css3 {
+    background-image: url(asteroid.png);
+    width: 500px;
+    height: 500px;
+}
+
+#css4 {
+    width: 50%;
+    padding: 25px;
+    margin: auto;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+#flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#picture {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a2/Posta_Romana_-_1959_-_Laika_120_B.jpg');
+    width: 30%;
+    min-height: 200px;
+    background-size: 300px;
+    background-position: center;
+    border-radius: 25%;
+}
+
+/* @media (max-width: 768px) {
+  .laika {
+    width: 50%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .laika {
+    width: 50%;
+    height: 300px;
+  }
+} */
+
+
+.a3 {
+    position: relative;
+}
+
+.rain {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.drop {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 30px;
+    background: #00f;
+    animation: fall 1s linear infinite;
+}
+
+.drop:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.drop:nth-child(2) {
+    left: 25%;
+    animation-delay: 0.2s;
+}
+
+.drop:nth-child(3) {
+    left: 40%;
+    animation-delay: 0.4s;
+}
+
+.drop:nth-child(4) {
+    left: 60%;
+    animation-delay: 0.6s;
+}
+
+.drop:nth-child(5) {
+    left: 80%;
+    animation-delay: 0.8s;
+}
+
+@keyframes fall {
+    0% {
+        top: 0;
+        opacity: 0.8;
+    }
+
+    100% {
+        top: 150px;
+        opacity: 0;
+    }
+}
+
+.snow {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.flake {
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation: snowfall 2.5s linear infinite;
+}
+
+.flake:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.flake:nth-child(2) {
+    left: 25%;
+    animation-delay: 0.5s;
+}
+
+.flake:nth-child(3) {
+    left: 45%;
+    animation-delay: 1s;
+}
+
+.flake:nth-child(4) {
+    left: 65%;
+    animation-delay: 1.5s;
+}
+
+.flake:nth-child(5) {
+    left: 85%;
+    animation-delay: 2s;
+}
+
+@keyframes snowfall {
+    0% {
+        top: 0;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        top: 150px;
+        transform: translateX(-10px);
+        opacity: 0.3;
+    }
+}
+
+.timeline-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #050a0d;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    padding-left: 50vw;
+    /* Empty space on the left */
+    padding-right: 50vw;
+    /* Empty space on the right */
+    gap: 100px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #0B3D91;
+    z-index: -1;
+}
+
+.event {
+    position: relative;
+    width: 300px;
+    background-color: #0B3D91;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 15px;
+}
+
+.event-title {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    color: #c8e6c9;
+    margin: 5px 0;
+}
+
+.event-description {
+    font-size: 0.95rem;
+    margin-top: 10px;
+}

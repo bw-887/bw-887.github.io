@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Before the launch",
+    "date": "1957",
+    "description": "Before the launch, Yazdovsky took Laika home to play with his children. 'Laika was quiet and charming ... I wanted to do something nice for her: She had so little time left to live.'",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/%D0%9B%D0%B0%D0%B9%D0%BA%D0%B0_%28%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%291.jpg/1280px-%D0%9B%D0%B0%D0%B9%D0%BA%D0%B0_%28%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%291.jpg",
+    "link": "https://en.wikipedia.org/wiki/Laika"
+  },
+  {
+    "title": "Sputnik 2 Launch",
+    "date": "November 3, 1957",
+    "description": "Sputnik 2 was launched by the Soviet Union, carrying Laika into orbit. This marked the first time a living creature was sent into space.",
+    "image": "https://www.nasa.gov/wp-content/uploads/2017/11/lg_sputnik-2-mockup.jpg?w=811",
+    "link": "https://en.wikipedia.org/wiki/Sputnik_2"
+  },
+  {
+    "title": "Laika in Orbit",
+    "date": "November 3-4, 1957",
+    "description": "During the first hours of the mission, Laika experienced stress due to high G-forces, tight confines, and elevated temperatures inside the spacecraft.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Laika_in_cabin.jpg/640px-Laika_in_cabin.jpg",
+    "link": "https://en.wikipedia.org/wiki/Laika"
+  },
+  {
+    "title": "Death of Laika",
+    "date": "November 4, 1957",
+    "description": "Laika passed away from overheating and stress within hours of launch. Originally, the Soviets claimed she survived several days.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Laika_memorial_in_Moscow.jpg/640px-Laika_memorial_in_Moscow.jpg",
+    "link": "https://en.wikipedia.org/wiki/Laika"
+  },
+  {
+    "title": "Legacy of Laika",
+    "date": "2002 & beyond",
+    "description": "The true circumstances of Laika’s death were revealed in 2002. She remains a symbol of early space exploration and the ethical considerations of sending animals to space.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monument_to_Laika_in_Moscow.jpg/640px-Monument_to_Laika_in_Moscow.jpg",
+    "link": "https://en.wikipedia.org/wiki/Laika"
+  }
+]
